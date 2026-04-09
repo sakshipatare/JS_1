@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Colour</title>
+    <style>
+    .box{
+        width:150px;
+        height:150px;
+        border:1px solid black;
+        margin:10px;
+        display:inline-block;
+        background-color:white;
+    }
+    </style>
+</head>
+<body>
+    <div id="loginPrompt" style="text-align: center; padding: 20px;">
+        <p>Please <a href="/index.html">login</a> to access the app.</p>
+    </div>
+    <div id="protectedContent" style="display: none;">
+        <h1 class="title">Pick a Colour</h1>
+        <div class="box">
+            <h2>Box 1</h2>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+        </div>  
+        <div class="box">
+            <h2>Box 3</h2>
+        </div>
+        <button onclick="startColor()">Start</button>
+        <button onclick="resetColor()">Reset</button>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
